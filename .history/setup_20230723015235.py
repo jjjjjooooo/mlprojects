@@ -1,0 +1,22 @@
+from distutils.core import setup
+from setuptools import find_packages, setup
+from typing import List
+
+
+def get_requirements(file_path)-> List[str]:
+      '''Get the requirements'''
+      requirements = []
+      with open(file_path, 'r') as f:
+            requirements=f.readlines()
+            requirements=[req.replace('\n','') for req in requirements]
+
+
+
+setup(name='mlprojects',
+      version='1.0',
+      description='Python Distribution Utilities',
+      author='Ou Jin',
+      author_email='jinoujoe@gmail.com',
+      packages=find_packages()
+      install_requires=get_requirements('requirements.txt')
+     )
