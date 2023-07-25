@@ -120,6 +120,9 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+.flagged
+.artifacts
+.vscode/
 .env
 .venv
 env/
@@ -162,4 +165,3 @@ cython_debug/
 # history
 .history/
 
-.vscode/
