@@ -121,8 +121,6 @@ celerybeat.pid
 
 # Environments
 .flagged
-artifacts/
-.artifacts
 .vscode/
 .env
 .venv
